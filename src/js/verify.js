@@ -18,15 +18,12 @@ function resetStyles(input) {
 function barrerEtAfficherReponse(input, correctAnswer) {
     // Convertir les deux valeurs en minuscules pour ignorer la casse
     if (input.value.toLowerCase() !== correctAnswer.toLowerCase()) {
-        input.style.textDecoration = "line-through red";
+        applyIncorrectAnswerStyles(input, correctAnswer);
     }
-
-
-    if (input.value !== correctAnswer) {
-      applyIncorrectAnswerStyles(input, correctAnswer);
-    } else {
-      applyCorrectAnswerStyles(input);
-    }
+ else {
+    applyCorrectAnswerStyles(input);
+  }
+  
   }
 
 
