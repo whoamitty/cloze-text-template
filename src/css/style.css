@@ -1,0 +1,61 @@
+/* Style général et responsive */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Fond d'écran sombre */
+    color: #ccc; /* Couleur de texte claire */
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px; /* Largeur maximale pour le contenu */
+    margin: auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Fond d'écran du container */
+    border-radius: 8px;
+  }
+  
+  /* Headers */
+  h1, h2, h3, h4 {
+    color: #fff;
+  }
+  
+  /* Les champs de saisie de texte à trous */
+  input[type="text"].trou {
+    background: #333;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  
+  /* Bouton de validation */
+  button#valider {
+    background: #4caf50; /* Vert pour actions principales */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button#valider:hover {
+    background: #66bb6a; /* Vert plus clair au survol */
+  }
+  
+
+
+  /* Média queries pour la réactivité */
+  @media (max-width: 600px) {
+    .container {
+      width: 95%;
+    }
+  
+    button#valider {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
